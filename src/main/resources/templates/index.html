@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link rel="shortcut icon" href="/icones/fav_icon.png" type="image/x-icon" />
+  <title>Musician e-Store Center</title>
+
+ 
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="red lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Musician e-Store Center</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Login</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Teste</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center red-text">Musician e-Store Center</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A sua loja virtual de instrumentos musicais!</h5>
+      </div>
+      <div class="row center">
+        <a href="#" id="download-button" class="btn-large waves-effect waves-light red">Ver produtos</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row center-align">
+        <div class="col s3">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><a href="#"><img th:src="@{/icones/eletric-guitar.png}" width="120px" alt="icon"></a></h2>
+            <h5 class="center">Guitarras Elétricas</h5>
+
+            <p class="light" style="text-align: justify;">Tá afim de tocar aquele "rock 'n roll pesado? Aqui na Musician e-Store Center, trazemos o melhor das guitarras elétricas, sendo usadas, ou novas. Temos na lista marcas renomadas como: Gibson, Fender, Ernie Ball, Rickenbacker e muito mais! O melhor de guitarras nacionais e importadas.</p>
+          </div>
+        </div>
+		 
+        <div class="col s3">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><a href="#"><img th:src="@{/icones/bass-guitar.png}" width="120px" alt="icon"></a></h2>
+            <h5 class="center">Baixos Elétricos</h5>
+
+            <p class="light" style="text-align: justify;">Então, nada melhor do que um grave na música, certo? Dá aquele charme inigualável. A Musician e-Store Center traz pra você, baixos da melhor qualidade, que irão te proporcionar graves de altíssima qualidade.</p>
+          </div>
+        </div>
+
+        <div class="col s3">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><a href="#"><img th:src="@{/icones/keyboards.png}" width="120px" alt="icon"></a></h2>
+            <h5 class="center">Teclas e Foles</h5>
+
+            <p class="light">Ah, então você prefere teclas às cordas? Então, tudo bem! Nós da Musician e-Store Center trazemos o melhor das teclas, incluindo pianos, teclados, acordeons, e afins.</p>
+          </div>
+        </div>
+        
+        <div class="col s3">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><a href="#"><img th:src="@{/icones/acoustic-guitar.png}" width="120px" alt="icon"></a></h2>
+            <h5 class="center">Instrumentos acústicos</h5>
+
+            <p class="light">Fazer som ao ar livre faz mais seu estilo? Então esta é a seção certa! Trazemos aqui o melhor de instrumentos acústicos, desde violões, baixolões, banjos, violas caipiras, ukuleles e muito mais!</p>
+          </div>
+        </div>
+        
+        <div class="col s3 push-s2">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><a href="#"><img th:src="@{/icones/semiacoustic-guitar.png}" width="100px" alt="icon"></a></h2>
+            <h5 class="center">Guitarras Semi-Acústicas</h5>
+
+            <p class="light">Afim de tocar aquele jazz, ou um bom blues? Ou quem sabe aquele reggae roots? A Musician e-Store traz uma seleção de guitarras semi-acústicas das melhores marcas. Como exemplares temos: Gibson Memphis, Guild, Gretsch, e muitos mais!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <br><br>
+  </div>
+
+  <footer class="page-footer red">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Sobre nós</h5>
+          <p class="grey-text text-lighten-4" style="text-align: justify;">A Musician e-Store Center é uma loja virtual de instrumentos novos e usados. Trazemos variados tipos de instrumentos, para variados gostos e variados orçamentos, onde visamos a satisfação do cliente!</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Sites recomendados:</h5>
+          <ul>
+            <li><a class="white-text" href="https://gibson.com">Gibson</a></li>
+            <li><a class="white-text" href="https://fender.com">Fender</a></li>
+            <li><a class="white-text" href="https://gretsch.com">Gretsch</a></li>
+            <li><a class="white-text" href="https://guildguitars.com">Guild Guitars</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      ©2018 - <a class="orange-text text-lighten-3" href="https://github.com/northEXE">Wendel Ferreira de Mesquita</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
