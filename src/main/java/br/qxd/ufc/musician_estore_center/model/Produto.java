@@ -28,12 +28,6 @@ public class Produto {
 
 	@Column(name = "preco")
 	private Double preco;
-
-	@Column(name = "emEstoque")
-	private boolean emEstoque;
-
-	@Column(name = "ehUsado")
-	private boolean ehUsado;
 	
 	@Column(name = "descricao")
 	private String descricao;
@@ -85,14 +79,6 @@ public class Produto {
 	public void setPreco(Double preco) {
 		this.preco = preco;
 	}
-
-	public boolean isEmEstoque() {
-		return emEstoque;
-	}
-
-	public void setEmEstoque(boolean emEstoque) {
-		this.emEstoque = emEstoque;
-	}
 	
 	public String getDescricao() {
 		return descricao;
@@ -100,14 +86,6 @@ public class Produto {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
-	}
-
-	public boolean isEhUsado() {
-		return ehUsado;
-	}
-
-	public void setEhUsado(boolean ehUsado) {
-		this.ehUsado = ehUsado;
 	}
 
 }

@@ -8,6 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import br.qxd.ufc.musician_estore_center.model.Produto;
 import br.qxd.ufc.musician_estore_center.repositories.ProdutoRepository;
+import br.qxd.ufc.musician_estore_center.utils.FileUtilsProjeto;
 
 
 @Service
@@ -17,8 +18,8 @@ public class ProdutoService {
 	private ProdutoRepository produtoRepository;
 
 	public void adicionarProduto(Produto produto, MultipartFile imagem) {
-		//String caminho = "imagens/" + produto.getAno() + " " + produto.getMarca() + " " + produto.getModelo() + ".jpg";
-		//UtilImagem.salvarImagem(caminho, imagem);
+		String caminho = "src/main/resources/static/imagens/" + produto.getAno() +  produto.getMarca() + produto.getModelo() + ".jpg";
+		FileUtilsProjeto.salvarImagem(caminho, imagem);
 
 		produtoRepository.save(produto);
 	}
